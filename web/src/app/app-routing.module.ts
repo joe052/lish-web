@@ -7,11 +7,6 @@ const routes: Routes = [
     loadChildren: () =>
       import('./layout/layout.module').then((m) => m.CustomLayoutModule),
   },
-  {
-    path: '**',
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },
 ];
 
 @NgModule({
