@@ -12,8 +12,8 @@ import { FooterComponent } from './components/footer/footer.component';
     WrapperComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [CommonModule, RouterModule, LayoutRoutingModule],
 })
-export class LayoutModule {}
+export class CustomLayoutModule {}
