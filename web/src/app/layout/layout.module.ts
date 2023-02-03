@@ -6,6 +6,7 @@ import { WrapperComponent } from './components/wrapper/wrapper.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    AboutUsComponent,
   ],
   imports: [CommonModule, RouterModule, LayoutRoutingModule],
 })
