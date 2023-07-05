@@ -5,13 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class ScrollService {
   constructor() {}
+  div: any;
 
   /**method to scroll down */
-  scrollDown() {
+  scrollDown(divId: string) {
     //ensuring intervals only run once
     const setInterval_ID = window.setInterval(() => {
-      const projDiv = document.getElementById('projects');
-      // projDiv!.scrollTop = projDiv?.scrollHeight;
+      this.div = document.getElementById(divId);
+      this.div!.scrollTop = this.div?.scrollHeight;
     }, 100);
     //stopping interval above after sometime
     window.setTimeout(() => {
