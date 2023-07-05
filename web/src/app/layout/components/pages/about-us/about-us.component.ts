@@ -19,17 +19,4 @@ export class AboutUsComponent implements OnInit {
       }
     });
   }
-
-  /**method to scroll down */
-  scrollDown() {
-    //ensuring intervals only run once
-    const setInterval_ID = window.setInterval(() => {
-      this.mainDiv = document.getElementById('main');
-      this.mainDiv.scrollTop = this.mainDiv?.scrollHeight;
-    }, 100);
-    //stopping interval above after sometime
-    window.setTimeout(() => {
-      window.clearInterval(setInterval_ID);
-    }, 500);
-  }
 }
