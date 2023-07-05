@@ -8,8 +8,6 @@ import { ScrollService } from 'src/app/services/scroll.service';
   styleUrls: ['./about-us.component.scss'],
 })
 export class AboutUsComponent implements OnInit {
-  mainDiv: any;
-
   constructor(private router: Router) {}
 
   ngOnInit(): void {
