@@ -21,10 +21,9 @@
         Apply Here
       </button>
       <button
-        data-collapse-toggle="navbar-sticky"
+        (click)="toggleHeader()"
         type="button"
         class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
-        aria-controls="navbar-sticky"
         aria-expanded="false"
       >
         <span class="sr-only">Open main menu</span>
@@ -44,8 +43,7 @@
       </button>
     </div>
     <div
-      class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-      [ngClass]="showHeader ? 'hidden' : ''"
+      class="items-center justify-between w-full hidden md:flex md:w-auto md:order-1"
       id="navbar-sticky"
     >
       <ul
@@ -54,6 +52,7 @@
         <li>
           <a
             routerLink="/home"
+            (click)="toggleHeader()"
             class="block py-2 pl-3 pr-4 md:p-0 text-gray-400 hover:text-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0"
             routerLinkActive="active"
             aria-current="page"
@@ -63,6 +62,7 @@
         <li>
           <a
             routerLink="/about_us"
+            (click)="toggleHeader()"
             routerLinkActive="active"
             class="block py-2 pl-3 pr-4 md:p-0 text-gray-400 hover:text-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0"
             >About</a
@@ -71,6 +71,7 @@
         <li>
           <a
             routerLink="/training"
+            (click)="toggleHeader()"
             routerLinkActive="active"
             class="block py-2 pl-3 pr-4 md:p-0 text-gray-400 hover:text-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0"
             >Training</a
@@ -79,6 +80,7 @@
         <li>
           <a
             routerLink="/partnership"
+            (click)="toggleHeader()"
             routerLinkActive="active"
             class="block py-2 pl-3 pr-4 md:p-0 text-gray-400 hover:text-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0"
             >Partnerships</a
@@ -87,6 +89,7 @@
         <li>
           <a
             routerLink="/blog"
+            (click)="toggleHeader()"
             routerLinkActive="active"
             class="block py-2 pl-3 pr-4 md:p-0 text-gray-400 hover:text-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0"
             >Blogs</a
@@ -95,6 +98,7 @@
         <li>
           <a
             routerLink="/contact"
+            (click)="toggleHeader()"
             routerLinkActive="active"
             class="block py-2 pl-3 pr-4 md:p-0 text-gray-400 hover:text-gray-100 md:hover:bg-transparent md:hover:text-blue-400 md:p-0"
             >Contact</a

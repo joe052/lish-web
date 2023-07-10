@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  showHeader: boolean = false;
-
+  
+  /**method to toggle header */
   toggleHeader() {
-    this.showHeader = !this.showHeader;
+    document.getElementById('navbar-sticky')?.classList.toggle('hidden');
   }
 }
