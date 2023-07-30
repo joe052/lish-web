@@ -4,3 +4,4 @@
   => Repository for main website designs
 ## Tools
   => Angular
+  => Tailwind
