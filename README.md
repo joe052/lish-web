@@ -6,3 +6,4 @@
 ## Tools
   => Angular
   => Tailwind
+## Versions
