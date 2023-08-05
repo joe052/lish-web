@@ -11,4 +11,9 @@ export class HeaderComponent {
   toggleHeader() {
     document.getElementById('navbar-sticky')?.classList.toggle('hidden');
   }
+
+  
+  openApplyForm(){
+    window.open('https://forms.gle/QjpU6RgWvUprVDGf6','_blank');
+  }
 }
