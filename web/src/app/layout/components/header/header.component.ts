@@ -12,7 +12,7 @@ export class HeaderComponent {
     document.getElementById('navbar-sticky')?.classList.toggle('hidden');
   }
 
-  
+  /**method to open application form */
   openApplyForm(){
     window.open('https://forms.gle/QjpU6RgWvUprVDGf6','_blank');
   }
