@@ -11,6 +11,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { TrainingComponent } from './components/pages/training/training.component';
 import { PartnershipComponent } from './components/pages/partnership/partnership.component';
+import { December2022Component } from './components/pages/blogpages/december2022/december2022.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PartnershipComponent } from './components/pages/partnership/partnership
     BlogComponent,
     TrainingComponent,
     PartnershipComponent,
+    December2022Component,
   ],
   imports: [CommonModule, RouterModule, LayoutRoutingModule],
 })
