@@ -8,6 +8,7 @@ import { PartnershipComponent } from './components/pages/partnership/partnership
 import { TrainingComponent } from './components/pages/training/training.component';
 import { WrapperComponent } from './components/wrapper/wrapper.component';
 import { December2022Component } from './components/pages/blogpages/december2022/december2022.component';
+import { August2023Component } from './components/pages/blogpages/august2023/august2023.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path: 'december2022blog',
         component: December2022Component,
+      },
+      {
+        path: 'august2023blog',
+        component: August2023Component,
       },
     ],
   },
