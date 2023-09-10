@@ -37,20 +37,20 @@ const routes: Routes = [
         component: BlogComponent,
       },
       {
+        path: 'blog/december2022',
+        component: December2022Component,
+      },
+      {
+        path: 'blog/august2023',
+        component: August2023Component,
+      },
+      {
         path: 'partnership',
         component: PartnershipComponent,
       },
       {
         path: 'training',
         component: TrainingComponent,
-      },
-      {
-        path: 'december2022blog',
-        component: December2022Component,
-      },
-      {
-        path: 'august2023blog',
-        component: August2023Component,
       },
     ],
   },
