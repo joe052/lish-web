@@ -9,6 +9,8 @@ import { TrainingComponent } from './components/pages/training/training.componen
 import { WrapperComponent } from './components/wrapper/wrapper.component';
 import { December2022Component } from './components/pages/blogpages/december2022/december2022.component';
 import { August2023Component } from './components/pages/blogpages/august2023/august2023.component';
+import { September2023Component } from './components/pages/blogpages/september2023/september2023.component';
+
 
 const routes: Routes = [
   {
@@ -44,6 +46,11 @@ const routes: Routes = [
         path: 'blog/august2023',
         component: August2023Component,
       },
+      {
+        path: 'blog/september2023',
+        component: September2023Component,
+      },
+
       {
         path: 'partnership',
         component: PartnershipComponent,

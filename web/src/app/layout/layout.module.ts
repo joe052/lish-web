@@ -13,6 +13,7 @@ import { TrainingComponent } from './components/pages/training/training.componen
 import { PartnershipComponent } from './components/pages/partnership/partnership.component';
 import { December2022Component } from './components/pages/blogpages/december2022/december2022.component';
 import { August2023Component } from './components/pages/blogpages/august2023/august2023.component';
+import { September2023Component } from './components/pages/blogpages/september2023/september2023.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { August2023Component } from './components/pages/blogpages/august2023/aug
     PartnershipComponent,
     December2022Component,
     August2023Component,
+    September2023Component,
   ],
   imports: [CommonModule, RouterModule, LayoutRoutingModule],
 })

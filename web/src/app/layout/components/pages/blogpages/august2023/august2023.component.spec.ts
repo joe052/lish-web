@@ -8,9 +8,8 @@ describe('August2023Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ August2023Component ]
-    })
-    .compileComponents();
+      declarations: [August2023Component],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(August2023Component);
     component = fixture.componentInstance;
