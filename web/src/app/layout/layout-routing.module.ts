@@ -17,15 +17,15 @@ const routes: Routes = [
     path: '',
     component: WrapperComponent,
     children: [
-      // {
-      //   path: '',
-      //   redirectTo: 'home',
-      //   pathMatch: 'full',
-      // },
       {
         path: '',
-        component: HomeComponent,
+        redirectTo: 'home',
+        pathMatch: 'full',
       },
+      // {
+      //   path: '',
+      //   component: HomeComponent,
+      // },
       {
         path: 'home',
         component: HomeComponent,
