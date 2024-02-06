@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { initCarousels } from 'flowbite';
 
 @Component({
   selector: 'app-home',
@@ -15,5 +16,7 @@ export class HomeComponent implements OnInit {
         window.scrollTo(0, 0);
       }
     });
+    // initialize carousel
+    initCarousels();
   }
 }
