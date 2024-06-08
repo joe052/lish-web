@@ -24,10 +24,6 @@ const routes: Routes = [
     component: PartnershipComponent,
   },
 ];
-// const routes: Routes = [
-//   ... other routes
-//   { path: 'training', component: TrainingComponent }, // Define the training route
-// ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { useHash: true }), CommonModule],
