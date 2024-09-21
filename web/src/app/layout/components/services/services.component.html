@@ -48,37 +48,36 @@
           <div
             class="flex justify-center items-center mx-auto h-6 w-36 py-5 rounded-full bg-white"
           >
-          <a 
-          router-link="/training"
-          class="flex" >
-            <button class="text-black">Read more</button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#000000"
-              class="bi bi-arrow-down-short"
-              viewBox="0 0 16 16"
-              class="h-6 w-6 mt-1 -rotate-90"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"
-              />
-            </svg>
-          </a>
+            <a [routerLink]="['/training']" class="flex">
+              <button class="text-black">Read more</button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#000000"
+                class="bi bi-arrow-down-short"
+                viewBox="0 0 16 16"
+                class="h-6 w-6 mt-1 -rotate-90"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-<div class="text-4xl text-white px-5">
-  <h1>AI Is No Longer</h1>
-  <h1>A <span class="text-blue-500">Thing Of The Future.</span></h1>
-  <h4 class="text-xl">LIsh AI focuses on initiatives under three classifications: <br>
-    industry-led projects, training, and Youth Empowerment.
-  </h4>
-</div>
+    <div class="text-4xl text-white px-5">
+      <h1>AI Is No Longer</h1>
+      <h1>A <span class="text-blue-500">Thing Of The Future.</span></h1>
+      <h4 class="text-xl">
+        LIsh AI focuses on initiatives under three classifications: <br />
+        industry-led projects, training, and Youth Empowerment.
+      </h4>
+    </div>
 
     <!-- cards -->
     <div
@@ -117,7 +116,7 @@
         <div
           class="flex justify-center items-center h-6 w-36 py-5 rounded-full bg-white"
         >
-          <a router-link="/about_us" class="flex">
+          <a [routerLink]="['/about_us']" class="flex">
             <button>Read more</button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -138,11 +137,9 @@
         </div>
       </div>
 
-      <!-- employmentplacement -->
+      <!-- job placement -->
       <div class="bg-slate-800 p-5 rounded-3xl h-[450px] opacity-80 space-y-7">
-        <h1 class="text-white text-center text-xl uppercase">
-          Employment Placement Services
-        </h1>
+        <h1 class="text-white text-center text-xl uppercase">Job Placement</h1>
         <div
           class="bg-gradient-to-r from-yellow-400 to-teal-500 rounded-2xl w-28 mx-auto flex justify-center items-center"
         >
@@ -174,7 +171,7 @@
         <div
           class="flex justify-center items-center h-6 w-36 py-5 rounded-full bg-white mt-5"
         >
-          <a routerLink="/training" class="flex">
+          <a [routerLink]="['/training']" class="flex">
             <button>Read more</button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +196,7 @@
       <!-- development -->
       <div class="bg-slate-800 p-5 rounded-3xl h-[450px] opacity-80 space-y-7">
         <h1 class="text-white text-center text-xl uppercase">
-          Design and Development
+          Design & Development
         </h1>
         <div
           class="bg-gradient-to-r from-yellow-400 to-teal-500 rounded-2xl w-28 mx-auto flex justify-center items-center"
@@ -225,29 +222,29 @@
           experienced designers and developers collaborates closely with clients
           to deliver innovative and scalable solutions that drive results.
         </p>
-        <div
+        <!-- BUTTON -->
+        <!-- <div
           class="flex justify-center items-center h-6 w-36 py-5 rounded-full bg-white"
         >
-        <a router-link="home"
-        class="flex" >
-          <button>Read more</button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-arrow-down-short"
-            viewBox="0 0 16 16"
-            class="h-6 w-6 mt-1 -rotate-90"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"
-            />
-          </svg>
-        </a>
+          <a [routerLink]="['/about_us']" class="flex">
+            <button>Read more</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-down-short"
+              viewBox="0 0 16 16"
+              class="h-6 w-6 mt-1 -rotate-90"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"
+              />
+            </svg>
+          </a>
           <img src="" alt="" />
-        </div>
+        </div> -->
       </div>
       <!-- </div> -->
     </div>
