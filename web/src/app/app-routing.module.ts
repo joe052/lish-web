@@ -29,29 +29,9 @@ const routes: Routes = [
     component: PartnershipComponent,
   },
 ];
-// const routes: Routes = [
-//   ... other routes
-//   { path: 'training', component: TrainingComponent }, // Define the training route
-// ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { useHash: true }), CommonModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
-// app-routing.module.ts
-
-// import { NgModule } from '@angular/core';
-// import { RouterModule, Routes } from '@angular/router';
-// import { TrainingComponent } from './training/training.component'; // Import your training component
-
-// const routes: Routes = [
-//   // ... other routes
-//   { path: 'training', component: TrainingComponent }, // Define the training route
-// ];
-
-// @NgModule({
-//   imports: [RouterModule.forRoot(routes)],
-//   exports: [RouterModule],
-// })
-// export class AppRoutingModule {}
