@@ -6,14 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  
   /**method to toggle header */
   toggleHeader() {
     document.getElementById('navbar-sticky')?.classList.toggle('hidden');
   }
 
   /**method to open application form */
-  openApplyForm(){
-    window.open('https://forms.gle/QjpU6RgWvUprVDGf6','_blank');
+  openApplyForm() {
+    window.open('https://forms.gle/2peAG4Vywd5addrs6', '_blank');
   }
 }
