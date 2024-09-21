@@ -1,41 +1,11 @@
-<!--header section-->
-<div
-  class="relative overflow-hidden bg-white mt-8 bg-gradient-to-r from-grey-500 to-transparent bg-slate-950"
-  style="
-    background-image: url(https://res.cloudinary.com/dpfcle0os/image/upload/v1706975520/samples/Lish-website/annotation33_rfl7g2.jpg);
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;
-  "
->
-  <!-- Overlay div for creating the overlay effect -->
-  <div class="h-screen flex items-center justify-items-start relative">
-    <div
-      class="absolute inset-0 px-4 sm:static flex items-center justify-center"
-    >
-      <div class="sm:max-w-lg lg:px-16 text-center">
-        <h1
-          class="font text-4xl font-semibold text-white text-2xl md:font-bold"
-        >
-          Image Annotation <br />
-          and Labeling
-        </h1>
-        <p class="text-xl text-thin text-white md:text-2xl">
-          Customized image annotation services for various data analysis
-          processes.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- End of overlay div -->
-</div>
+<app-hero></app-hero>
 
 <!--about us section-->
 <div
-  class="px-2 flex flex-col items-center py-24 sm:px-6 sm:py-32 lg:px-8 bg-white py-12 sm:py-32 lg:"
+  class="px-2 flex flex-col items-center py-24 sm:px-6 sm:py-32 lg:px-8 bg-white"
 >
   <div class="sm:text-center pb-4 flex flex-col items-center justify-center">
-    <h2 class="text-lg font-semibold leading-8 text-indigo-600">OUR STORY</h2>
+    <h2 class="text-lg font-semibold leading-8 text-blue-600">OUR STORY</h2>
     <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
       What is our Impact?
     </p>
@@ -58,192 +28,13 @@
   </div>
 </div>
 
-<!-- another section -->
-<!-- section -->
-<section class="bg-gray-800">
-  <div class="container px-6 py-10 mx-auto">
-    <h1 class="text-2xl font-semibold text-white capitalize lg:text-4xl">
-      AI is no longer <br />
-      a <span class="text-blue-400">Thing of the future.</span>
-    </h1>
-    <div class="">
-      <p class="mt-6 max-w-2xl text-lg lg:text-2xl leading-8 text-gray-300">
-        Lish AI focuses on initiatives under three classifications: industry-led
-        projects, training, and Youth Empowerment.
-      </p>
-    </div>
-    <div
-      class="grid grid-cols-1 gap-8 my-48 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3"
-    >
-      <div
-        class="flex flex-col items-center p-6 space-y-3 text-center bg-orange-600 rounded-xl transform transition cursor-pointer hover:-translate-y-2 ml-10"
-      >
-        <span
-          class="inline-block p-3 text-white bg-orange-600 rounded-full animate-bounce"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-            />
-          </svg>
-        </span>
+<app-services></app-services>
 
-        <h1
-          class="text-xl lg:text-3xl font-semibold text-black capitalize select-none"
-        >
-          Training
-        </h1>
-
-        <p class="text-black select-none">
-          We invest in our workforce with an accelerated program that trains in
-          every aspect of AI annotation. We also offer certfied training.
-        </p>
-
-        <a
-          [routerLink]="['/training']"
-          class="flex items-center -mx-1 text-sm text-black capitalize transition-colors duration-300 transform hover:underline hover:text-white"
-        >
-          <span class="mx-1 my-10">read more</span>
-          <svg
-            class="w-4 h-4 mx-1 rtl:-scale-x-100"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </a>
-      </div>
-
-      <div
-        class="flex flex-col items-center p-6 space-y-3 text-center bg-yellow-500 rounded-xl transform transition cursor-pointer hover:-translate-y-2 ml-10"
-      >
-        <span
-          class="inline-block p-3 text-white bg-yellow-500 rounded-full animate-bounce"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-            />
-          </svg>
-        </span>
-
-        <h1
-          class="text-xl lg:text-3xl font-semibold text-black capitalize select-none"
-        >
-          AI Projects
-        </h1>
-
-        <p class="text-black select-none">
-          We undertake projects especially ones that are AI related but also
-          provide solution to business in data labelling and data science to
-          machine learning solution to meet business needs .
-        </p>
-
-        <a
-          routerLink="/blog"
-          class="flex items-center -mx-1 text-sm text-black capitalize transition-colors duration-300 transform hover:underline hover:text-white"
-        >
-          <span class="mx-1 my-10">read more</span>
-          <svg
-            class="w-4 h-4 mx-1 rtl:-scale-x-100"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </a>
-      </div>
-
-      <div
-        class="flex flex-col items-center p-6 space-y-3 text-center rounded-xl bg-blue-600 transform transition cursor-pointer hover:-translate-y-2 ml-10"
-      >
-        <span
-          class="inline-block p-3 text-white bg-blue-600 rounded-full animate-bounce"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-            />
-          </svg>
-        </span>
-
-        <h1
-          class="text-xl lg:text-3xl font-semibold text-black capitalize select-none"
-        >
-          Youth Empowerment
-        </h1>
-
-        <p class="text-black select-none">
-          We as a company feel obligated to not only provide a platform for Jobs
-          but to enable and empower our taskers with skills that can be used
-          outside the scope of AI annotation
-        </p>
-
-        <a
-          [routerLink]="['/about_us']"
-          class="flex items-center -mx-1 text-sm text-black capitalize transition-colors duration-300 transform hover:underline hover:text-white"
-        >
-          <span class="mx-1 my-10">read more</span>
-          <svg
-            class="w-4 h-4 mx-1 rtl:-scale-x-100"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- another section -->
+<!-- What sets us apart -->
 <div class="bg-white py-24 sm:py-32 lg:py-40">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="sm:text-center">
-      <h2 class="text-lg font-semibold leading-8 text-indigo-600 select-none">
+      <h2 class="text-lg font-semibold leading-8 text-blue-600 select-none">
         OUR APPROACH
       </h2>
       <p
@@ -431,7 +222,7 @@
             />.
             <div class="absolute bottom-0 flex p-3 bg-gray-100 shadow rounded">
               <div class="mx-4">
-                <h1 class="text-base text-red-600">6th December 2022</h1>
+                <h1 class="text-base text-red-600">6th December 2023</h1>
               </div>
             </div>
           </div>
@@ -493,82 +284,6 @@
   </div>
 </section>
 
-<!-- ====== Brands Section End -->
-<section class="corousel py-16 my-4">
-  <div class="image-slider">
-    <div class="image-slider-track">
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975520/samples/Lish-website/ACFAT_h9raqi.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975518/samples/Lish-website/AFRICAAI_ua85oo.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975522/samples/Lish-website/konza_caf3z5.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975519/samples/Lish-website/TVETA_bjmp65.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975526/samples/Lish-website/RockBM_ou6cay.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975521/samples/Lish-website/ICTAUTHORITY_u9jkvc.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975520/samples/Lish-website/ACFAT_h9raqi.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975518/samples/Lish-website/AFRICAAI_ua85oo.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975522/samples/Lish-website/konza_caf3z5.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975519/samples/Lish-website/TVETA_bjmp65.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975526/samples/Lish-website/RockBM_ou6cay.png"
-          alt=""
-        />
-      </div>
-      <div class="slide">
-        <img
-          src="https://res.cloudinary.com/dpfcle0os/image/upload/v1706975521/samples/Lish-website/ICTAUTHORITY_u9jkvc.png"
-          alt=""
-        />
-      </div>
-    </div>
-  </div>
-</section>
+<app-gallery></app-gallery>
+
+<app-partners></app-partners>

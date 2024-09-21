@@ -14,6 +14,10 @@ import { PartnershipComponent } from './components/pages/partnership/partnership
 import { December2022Component } from './components/pages/blogpages/december2022/december2022.component';
 import { August2023Component } from './components/pages/blogpages/august2023/august2023.component';
 import { September2023Component } from './components/pages/blogpages/september2023/september2023.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { ServicesComponent } from './components/services/services.component';
+import { PartnersComponent } from './components/partners/partners.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,10 @@ import { September2023Component } from './components/pages/blogpages/september20
     December2022Component,
     August2023Component,
     September2023Component,
+    HeroComponent,
+    ServicesComponent,
+    PartnersComponent,
+    GalleryComponent,
   ],
   imports: [CommonModule, RouterModule, LayoutRoutingModule],
 })
